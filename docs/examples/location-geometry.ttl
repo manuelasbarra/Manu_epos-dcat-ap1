@@ -7,10 +7,6 @@
 
 []
 
-dct:spatial [ a dct:Location ;
-      locn:geometry "POLYGON(( 3.053 47.975 , 7.24  47.975 , 7.24  53.504 , 3.053 53.504 , 3.053 47.975))"^^gsp:wktLiteral
-  	];
-.
 # This property refers to a geographic region that is covered by the Dataset.
 dct:spatial [ a dct:Location ;
       locn:geometry "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
