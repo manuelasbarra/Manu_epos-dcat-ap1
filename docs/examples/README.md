@@ -76,7 +76,7 @@ Full example: <a href="./full_example.ttl"><code>full_example.ttl</code></a>
 </tr>
 <tr>
         <td>PeriodOfTime</td>
-        <td><a href="./period-of-time.ttl"><code>periodoftime.ttl</code></a></td>
+        <td><a href="./periodoftime.ttl"><code>periodoftime.ttl</code></a></td>
 </tr>
 <tr>
         <td>Person</td>
