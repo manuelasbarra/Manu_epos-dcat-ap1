@@ -36,15 +36,15 @@
     #  This property contains the type of service being offered.
     schema:serviceType "TNA service" ;
 
-    # This property refers to a geographical area (Point or Polygon) covered by the Service.
-    dct:spatial [ a dct:Location ;
-    	dcat:bbox  "POLYGON((14.7 37.6 , 14.7 38.1 , 15.7 38.1 , 15.7 37.6 , 14.7 37.6))"^^gsp:wktLiteral;
-    ];
+   # This property refers to a geographical area (Point or Polygon) covered by the Service.
+  	dct:spatial [ a dct:Location ;
+  		    locn:geometry  "POLYGON((14.7 37.6 , 14.7 38.1 , 15.7 38.1 , 15.7 37.6 , 14.7 37.6))"^^gsp:wktLiteral; 
+  	];
 
     # This property refers to a temporal period that the Service covers.
     dct:temporal [ a dct:PeriodOfTime ;
-            dcat:startDate "2020-01-01T00:00:00Z"^^xsd:dateTime ;
-            dcat:endDate "2020-10-31T00:00:00Z"^^xsd:dateTime ;
+          schema:startDate "2020-01-01T00:00:00Z"^^xsd:dateTime ;
+          schema:endDate "2020-10-31T00:00:00Z"^^xsd:dateTime ;
     ] ;
 
     # This property refers to a category (skos:Concept) of the Service. A Service may be associated with multiple themes.
