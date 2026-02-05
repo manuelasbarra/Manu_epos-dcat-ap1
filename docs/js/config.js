@@ -125,6 +125,13 @@ function quickreference() {
         "publisher":"European Commission",
         "date":"2015"
       },
+       "VOCAB-DCAT": {
+        "href":"https://www.w3.org/TR/vocab-dcat-1/",
+        "title":"Data Catalog Vocabulary (DCAT)",
+        //"publisher":"TBD"
+        "publisher":"European Commission",
+        "date":"2014"
+      },
       "DCAT-AP-3": {
         //"href":"https://joinup.ec.europa.eu/solution/dcat-application-profile-data-portals-europe",
         "title":"DCAT Application Profile for data portals in Europe. Verson 3.0",
