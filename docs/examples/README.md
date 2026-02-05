@@ -20,7 +20,7 @@ Full example: <a href="./full_example.ttl"><code>full_example.ttl</code></a>
 </tr>
 <tr> 
         <td>Category Scheme</td>
-        <td><a href="./category-scheme.ttl"><code>categoryscheme.ttl</code></a></td>
+        <td><a href="./categoryscheme.ttl"><code>categoryscheme.ttl</code></a></td>
 </tr>
 <tr>
         <td>Contact Point</td>
