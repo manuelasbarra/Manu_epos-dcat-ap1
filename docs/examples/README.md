@@ -59,9 +59,6 @@ Full example: <a href="./full_example.ttl"><code>full_example.ttl</code></a>
         <td>Location</td>
         <td><a href="./location-geometry.ttl"><code>location-geometry.ttl</code></a></td>
 </tr>
-<tr>    <td/>
-        <td><a href="./location-centroid.ttl"><code>location-centroid.ttl</code></a></td>
-</tr>
 <tr>
         <td>Operation</td>
         <td><a href="./operation.ttl"><code>operation.ttl</code></a></td>
