@@ -63,9 +63,7 @@
     # Example of frequency using a controlled vocabulary http://dublincore.org/2012/06/14/dctype
     dct:type "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI ;
 
-    # This property refers to a related Dataset that is part of the described Dataset.
-    # dct:hasPart <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
-
+    # This property refers to the quality assurance document URL
     dqv:hasQualityAnnotation [ a oa:Annotation ;
         oa:hasBody "URL_of_QualityAssurance"^^xsd:anyURI  ;
         oa:hasTarget <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> ;
