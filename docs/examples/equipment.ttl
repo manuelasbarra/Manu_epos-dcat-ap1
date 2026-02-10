@@ -28,7 +28,7 @@
     dct:type "https://orfeus-eu.org/ns/station"^^xsd:anyURI ;
 
     # This property contains the serial number for the Equipment.
-	  schema:serialNumber "serialNumber" 
+	schema:serialNumber "serialNumber" 
 
   # Optional
     dcat:contactPoint <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
