@@ -12,7 +12,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix schema: <http://schema.org/> .
-@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 []
 
@@ -67,12 +67,6 @@
     # Example of frequency using a controlled vocabulary http://dublincore.org/2012/06/14/dctype
     dct:type "http://purl.org/dc/dcmitype/Collection"^^xsd:anyURI ;
 
-    # This property refers to the quality assurance document URL
-    dqv:hasQualityAnnotation [ a oa:Annotation ;
-        oa:hasBody "URL_of_QualityAssurance"^^xsd:anyURI  ;
-        oa:hasTarget <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001> ;
-    ];
-    
     # This property refers to a related Dataset of which the described Dataset is a version, edition, or adaptation.
 	# dct:hasVersion <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/otherDataset> ;
 
