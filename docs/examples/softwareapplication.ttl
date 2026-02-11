@@ -7,11 +7,11 @@
 
 []
 
-<softwareID> a schema:SoftwareApplication;
+<SoftwareApplicationId> a schema:SoftwareApplication;
 
   # Mandatory
     # This property contains one or more identifier for the software
-    schema:identifier "softwareID" ;
+    schema:identifier "SoftwareApplicationId" ;
     schema:identifier [ a schema:PropertyValue ;
   		schema:propertyID  "DDSS-ID" ;
   		schema:value "WP8-DDSS-XXX" ;
