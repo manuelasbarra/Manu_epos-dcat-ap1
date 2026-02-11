@@ -3,10 +3,12 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix gsp: <http://www.opengis.net/ont/geosparql#> .
 @prefix hydra: <http://www.w3.org/ns/hydra/core#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> 
 
 []
 
@@ -27,15 +29,16 @@
 
   # Optional properties
   dct:conformsTo <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation> ;
-  schema:keywords "seismology", "seismicity", "earthquakes", "waveform", "seismic hazard", "earth structure", "earthquake intensity", "macroseismic", "macroseismic information", "waveform modeling", "ODC", "Dataselect", "FDSN-WS", "Seismic Waveform", "EIDA" ;
   dct:license "http://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
   dct:spatial [ a dct:Location ;
-      dcat:bbox "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
-    ];
+      locn:geometry "POLYGON((180.0 -90.0, -180.0 -90.0, -180.0 90.0, 180.0 90.0, 180.0 -90.0))"^^gsp:wktLiteral ;
+  ];
   # This property refers to a web service operation supported by the Web Service.
-  hydra:supportedOperation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> ;
   dct:temporal [ a dct:PeriodOfTime ;
-          schema:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
-          #schema:endDate "YYYY-MM-DDThh:mm:ssZ"^^xsd:dateTime ;
+      schema:startDate "1988-01-01T00:00:00Z"^^xsd:dateTime ;
+      #schema:endDate "YYYY-MM-DDThh:mm:ssZ"^^xsd:dateTime ;
   ] ;
+  hydra:supportedOperation <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> ;
+  schema:keywords "seismology", "seismicity", "earthquakes", "waveform", "seismic hazard", "earth structure", "earthquake intensity", "macroseismic", "macroseismic information", "waveform modeling", "ODC", "Dataselect", "FDSN-WS", "Seismic Waveform", "EIDA" ;
+
 .
