@@ -10,15 +10,17 @@
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001> a dcat:Distribution ;
 
   # Mandatory properties
-    # This property dcat:accessURL contains url of DataService
-    dcat:accessURL "http://www.orfeus-eu.org/fdsnws/dataselect/1/query"^^xsd:anyURI ;
+    # This property contains a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain # information about how to get the Dataset.
+    # If the type of Distribution is WEB SERVICE, this property refers to the Operation of the Web Service to which the Distribution conforms.
+    dcat:accessURL <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/Operation/001> ;
     dct:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/Dataset/001/Distribution/001" ;
 
   # Recommended properties
     # If the type of Distribution is WEB SERVICE, this property refers to the Web Service that gives access to a Distribution of the Dataset. Otherwise, this property is optional.
 	dct:conformsTo <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001> ;
-    dct:description "Description of Seismic Waveform Distribution" ;
-    
+    dct:description "Description of Seismic Waveform Distribution" 
+
+    # This property refers to the file format of the Distribution. 
     # The possible types of the file format are here: http://publications.europa.eu/mdr/resource/authority/file-type/html/filetypes-eng.html
     dct:format "http://publications.europa.eu/resource/authority/file-type/BIN"^^xsd:anyURI ;
 
@@ -26,7 +28,7 @@
     # (http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE
     # OR
     # http://publications.europa.eu/resource/authority/distribution-type/DOWNLOADABLE_FILE)
-	  dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
+	dct:type "http://publications.europa.eu/resource/authority/distribution-type/WEB_SERVICE"^^xsd:anyURI ;
 
   # Optional properties
     # This property contains the size of a Distribution in bytes.
