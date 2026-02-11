@@ -10,7 +10,6 @@
 dct:conformsTo <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation> ;
 .
 
-[]
 <https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001/APIDocumentation> a hydra:ApiDocumentation ;
       hydra:title "documentation title" ;
       hydra:description "some description of API Documentation" ;
