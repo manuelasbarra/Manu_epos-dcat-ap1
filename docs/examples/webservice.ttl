@@ -17,7 +17,7 @@
   # Mandatory properties
     schema:identifier "https://www.epos-eu.org/epos-dcat-ap/Seismology/WebService/001" ;
   
-    # Recommended properties
+  # Recommended properties
     dcat:contactPoint <http://orcid.org/0000-0002-6250-0000/contactPoint> ;
     schema:dateModified "2016-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:datePublished "2016-01-01T00:00:00Z"^^xsd:dateTime ;
