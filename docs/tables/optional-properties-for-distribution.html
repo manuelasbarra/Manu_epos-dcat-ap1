@@ -19,23 +19,6 @@
     </tr>
   </thead>
   <tbody>
-  <!--  <tr class="property optional" id="distribution.accessservice">
-      <td>
-          <p>accessService</p>
-      </td>
-      <td>
-          <p><code>dcat:accessService</code></p>
-      </td>
-      <td>
-          <p><code>dcat:DataService</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to a Data Service that gives access to the Distribution of the Dataset.</p>
-      </td>
-      <td class="center">
-          <p>0..n</p>
-      </td>
-    </tr>-->
     <tr class="property optional" id="distribution.bytesize">
       <td>
           <p>byteSize</p>
@@ -44,7 +27,7 @@
           <p><code>dcat:byteSize</code></p>
       </td>
       <td>
-          <p><code>xsd:nonNegativeInteger</code></p>
+          <p><code>rdfs:Literal</code><br>typed as <code>xsd:decimal</code></p>
       </td>
       <td class="justify">
           <p>This property contains the size of a Distribution in bytes.</p>
@@ -87,23 +70,7 @@
           <p>0..n</p>
       </td>
     </tr>
-    <!--<tr class="property optional" id="distribution.haspolicy">
-      <td>
-          <p>hasPolicy</p>
-      </td>
-      <td>
-          <p><code>odrl:hasPolicy</code></p>
-      </td>
-      <td>
-          <p><code>odrl:Policy</code></p>
-      </td>
-      <td class="justify">
-          <p>This property refers to the policy expressing the rights associated with the Distribution if using the [[VOCAB-ODRL]] vocabulary.</p>
-      </td>
-      <td class="center">
-          <p>0..1</p>
-      </td>
-    </tr>-->
+   
     <tr class="property optional" id="distribution.issued">
       <td>
           <p>issued</p>
