@@ -66,6 +66,9 @@ table.def td, table.def th {
 .hljs{
   background: #e9a74324!important;
 }
+.note-title {
+  color:#eba843;
+}
 table.definition {width:100%;}
 table:not(.definition).simple {font-size:small;}
 table.definition th {width:20%;}
