@@ -64,7 +64,7 @@ table.def td, table.def th {
 }
 .note ul.one {column-count:1;}
 .hljs{
-  background: #fcfaee!important;
+  background: #e9a74324!important;
 }
 table.definition {width:100%;}
 table:not(.definition).simple {font-size:small;}
