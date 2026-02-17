@@ -58,6 +58,7 @@ table.def td, table.def th {
     border-bottom: 1px solid #ccc!important;
 
 }
+.note {background: #fdefdb!important;}
 .note ul {column-count:2;}
 .note{
   border:1px solid #ddd!important;
