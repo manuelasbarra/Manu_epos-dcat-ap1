@@ -68,7 +68,7 @@ table.def td, table.def th {
   background: #fdefdb!important;
 }
 .note-title {
-  color:#eba843;
+  color:#eba843!important;
 }
 table.definition {width:100%;}
 table:not(.definition).simple {font-size:small;}
