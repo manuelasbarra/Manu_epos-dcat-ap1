@@ -1,7 +1,24 @@
-body{
-  text-align: justify!important;
-  background-image: url(./images/nav_logo.svg) !important;
-  background-size: 35px auto!important;
+
+body {
+  text-align: justify !important;
+  position: relative;
+  /* Rimuoviamo il background-image dal body principale per non colorare tutto */
+}  
+  body::before {
+  content: "";
+  position: fixed;
+  top: 10px; left: 10px;
+  width: 35px; height: 35px;
+  
+  /* Il colore che vuoi dare all'icona */
+  background-color: #007bff; 
+  
+  /* L'icona agisce come "ritaglio" */
+  -webkit-mask-image: url(./images/nav_logo.svg);
+  mask-image: url(./images/nav_logo.svg);
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
 }
 a[href]{
   color: #eba843!important;
