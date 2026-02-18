@@ -144,7 +144,8 @@ epos:dynamicRange
   rdf:type owl:ObjectProperty ;
   rdfs:comment "This property contains the full scale measuring ability, in nT (unit and value)"@en  ;
   rdfs:domain epos:Equipment ;
-  rdfs:range schema:QuantitativeValue ;
+  rdfs:range rdfs:Literal ;
+  #rdfs:range schema:QuantitativeValue ;
 .
 epos:filter
   rdf:type owl:ObjectProperty ;
@@ -156,7 +157,8 @@ epos:samplePeriod
   rdf:type owl:ObjectProperty ;
   rdfs:comment "This property contains the sample period in ms"@en  ;
   rdfs:domain epos:Equipment ;
-  rdfs:range schema:QuantitativeValue ;
+  rdfs:range rdfs:Literal ;
+  #rdfs:range schema:QuantitativeValue ;
 .
 epos:orientation
   rdf:type owl:ObjectProperty ;
@@ -811,6 +813,7 @@ epos:WebServiceShape
       sh:path schema:keywords;
       sh:description "This property contains the keywords used to describe the Web Service. Multiple entries in a keywords list are typically delimited by commas.";
       sh:datatype xsd:string ;
+	  sh:maxCount 1 ;		  
     ] ;
   sh:property [
       sh:path dct:license ;
@@ -1118,7 +1121,8 @@ epos:EquipmentShape
   sh:property [
       sh:path epos:dynamicRange ;
       sh:description "This property contains the full-scale measuring ability, in nT (unit and value).";
-      sh:class schema:QuantitativeValue ;
+	  sh:datatype xsd:string ;		  
+      #sh:class schema:QuantitativeValue ;
       sh:maxCount 1 ;
     ] ;
   sh:property [
@@ -1136,7 +1140,8 @@ epos:EquipmentShape
   sh:property [
       sh:path epos:samplePeriod ;
       sh:description "This property contains the sample period in mS (unit and value)";
-      sh:class schema:QuantitativeValue ;
+	  sh:datatype xsd:string ;		  
+      #sh:class schema:QuantitativeValue ;
       sh:maxCount 1 ;
     ] ;
   sh:property [
@@ -1149,10 +1154,6 @@ epos:EquipmentShape
       sh:description "This property refers to a geographical location of the Equipment.";
       sh:class dct:Location ;
       sh:maxCount 1 ;
-    ] ;
-  sh:property [
-      sh:path epos:annotation ;
-      sh:class oa:Annotation ;
     ] ;
   sh:property [
       sh:path dct:temporal ;
@@ -1915,6 +1916,7 @@ epos:SoftwareApplicationShape
       sh:path schema:keywords ;
       sh:description "This property contains the keywords used to describe the Software Application. Multiple entries in a keywords list are typically delimited by commas.";
       sh:datatype xsd:string ;
+	  sh:maxCount 1 ;		  
     ] ;
   sh:property [
       sh:path dcat:theme;
@@ -2052,6 +2054,7 @@ epos:SoftwareSourceCodeShape
       sh:path schema:keywords ;
       sh:description "This property contains the keywords used to describe the Software Source Code. Multiple entries in a keywords list are typically delimited by commas.";
       sh:datatype xsd:string ;
+	  sh:maxCount 1 ;
     ] ;
   sh:property [
      sh:path dcat:theme;
@@ -2116,27 +2119,27 @@ epos:PostalAddressShape
  ];
 .
 
-epos:QuantitativeValueShape
-  a sh:NodeShape ;
-  sh:targetClass schema:QuantitativeValue ;
+#epos:QuantitativeValueShape
+#  a sh:NodeShape ;
+#  sh:targetClass schema:QuantitativeValue ;
   ####
   # QuantitativeValue properties
   ####
-  sh:property [
-      sh:path schema:unitCode ;
-      sh:description "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.";
-      sh:datatype xsd:string;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-    ] ;
-  sh:property [
-      sh:path schema:value ;
-      sh:description "The value of the quantitative value or property value node.The recommended type for values is 'Number'.";
-      sh:datatype xsd:double;
-      sh:maxCount 1 ;
-      sh:minCount 1 ;
-    ] ;
-.
+#  sh:property [
+#      sh:path schema:unitCode ;
+#      sh:description "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.";
+#      sh:datatype xsd:string;
+#      sh:maxCount 1 ;
+#      sh:minCount 1 ;
+#    ] ;
+#  sh:property [
+#      sh:path schema:value ;
+#      sh:description "The value of the quantitative value or property value node.The recommended type for values is 'Number'.";
+#      sh:datatype xsd:double;
+#      sh:maxCount 1 ;
+#      sh:minCount 1 ;
+#    ] ;
+#.
 
 epos:LocationShape
   a sh:NodeShape ;
