@@ -6,7 +6,7 @@ body {
 }  
  
 a[href]{
-  color: #eba843!important;
+  color: #f89858ff!important;
 }
 .toc a{
     color: var(--toclink-text)!important;
@@ -18,20 +18,20 @@ a[href]{
   color:#2b422d!important;
 }
 .dt-published{
-  color:#eba843!important;
+  color:#f89858ff!important;
 }
 h1, h2, h3{
-  color:#eba843!important;
+  color:#f89858ff!important;
   font-weight: bold!important;
 }
 :is(h2,h3,h4,h5,h6)+a.self-link::before {
-  color:#eba843!important;
+  color:#f89858ff!important;
 }
 a.bibref{
-    color: #eba843!important;
+    color: #f89858ff!important;
 }
-table.simple {width:100%; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 3px solid #eba843!important;}
-table.simple th{padding: 3px 10px!important; background: #eba843!important;}
+table.simple {width:100%; border-top: 1px solid #ccc; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 3px solid #f89858ff!important;}
+table.simple th{padding: 3px 10px!important; background: #f89858ff!important;}
 
 table.simple th.xxxsmall{width:5%!important; text-align: center;}
 table.simple th.xsmall{width:10%!important; text-align: center;}
@@ -47,7 +47,7 @@ table.simple tr:nth-child(even) {
 }
 table.def  {
   padding:0!important;
-  border-left: 0.5em solid #eba843!important;
+  border-left: 0.5em solid #f89858ff!important;
   border-right:1px solid #ddd!important;
   border-top:1px solid #ddd!important;
   border-bottom:1px solid #ddd!important;
@@ -70,7 +70,7 @@ table.def td, table.def th {
   background: #fdefdb!important;
 }
 .note-title {
-    color: #eba843 !important;
+    color: #f89858ff !important;
 }
 table.definition {width:100%;}
 table:not(.definition).simple {font-size:small;}
@@ -128,7 +128,7 @@ p.plus:before{
   text-decoration: none;
   float: right
 }
-.buttonsample:hover {color:#eba843!important;}
+.buttonsample:hover {color:#f89858ff!important;}
 .tabsstyle {
   overflow: hidden;
 }
