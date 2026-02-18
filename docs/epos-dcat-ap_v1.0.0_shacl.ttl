@@ -922,54 +922,6 @@ epos:IriTemplateMappingShape
       sh:minCount 1 ;
       sh:maxCount 1 ;
     ] ;
-####
-# IriTemplateMapping optional properties
-####
-  sh:property [
-      sh:path schema:defaultValue ;
-      sh:description "This property contains the default value of the parameter.";
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-    ] ;
-  sh:property [
-      sh:path schema:minValue ;
-      sh:description "This property contains the minimum value of the parameter.";
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-    ] ;
-  sh:property [
-      sh:path schema:maxValue ;
-      sh:description "This property contains the maximum value of the parameter.";
-      sh:datatype xsd:string;
-      sh:maxCount 1 ;
-    ] ;
-  sh:property [
-      sh:path http:paramValue ;
-      sh:description "This property contains one of the possible values which should be used in the web service query. It could be repeated as many times as needed.";
-      sh:datatype xsd:string ;
-    ] ;
-  sh:property [
-      sh:path schema:multipleValues ;
-      sh:description "Whether multiple values are allowed for the property. Default is false.";
-      sh:datatype xsd:boolean ;
-    ] ;
-  sh:property [
-      sh:path schema:readonlyValue ;
-      sh:description "Whether or not a property is mutable. Default is false. Specifying this for a property that also has a value makes it act similar to a hidden input in an HTML form.";
-      sh:datatype xsd:boolean ;
-    ] ;
-  sh:property [
-      sh:path schema:valuePattern ;
-      sh:description "This property contains the regular expression for testing values according to the parameter's specification.";
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-    ] ;
-  sh:property [
-      sh:path hydra:property ;
-      sh:description "This property contains the vocabulary term which indicates the semantic description of parameter.";
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-    ] ;
 .
 
 epos:ServiceShape
