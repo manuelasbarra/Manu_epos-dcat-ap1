@@ -2,6 +2,7 @@ body{
   text-align: justify!important;
   background-image: url(./images/nav_logo.svg) !important;
   background-size: 35px auto!important;
+  background-color:#eba843!important;
 }
 a[href]{
   color: #eba843!important;
